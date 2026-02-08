@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for You ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="page1" class="page active"> <h2>For You ❤️</h2>
+            <img src="3d-render-gift-box-with-ribbon-present-package (1).jpg" alt="Gift Box"> 
+            <br>
+            <button class="btn" onclick="goToPage('page2')">🎁 เปิดของขวัญ</button>
+        </div>
+
+        <div id="page2" class="page">
+            <h2>ดอกไม้สำหรับคนพิเศษ 🌹</h2>
+            <img src="6519692.jpg" alt="Flower">
+            <br>
+            <button class="btn" onclick="goToPage('page3')">ไปต่อเลย ></button>
+        </div>
+
+        <div id="page3" class="page">
+            <h2>🔒 ใส่รหัสผ่านสิจ๊ะ</h2>
+            <p>ใบ้ให้: วันครบรอบของเรา (เช่น 121055)</p>
+            <input type="password" id="passInput" placeholder="กรอกรหัสผ่าน">
+            <br>
+            <button class="btn" onclick="checkPass()">ปลดล็อค</button>
+            <p id="error-msg" class="error-text">รหัสผิดนะจ๊ะ ลองใหม่!</p>
+        </div>
+
+        <div id="page4" class="page">
+            <h2>เซอร์ไพรส์!! 🎉</h2>
+            <img src="pngtree-cartoon-cute-gift-box-playing-bear-png-image_1715611.jpg" alt="Surprise Gift">
+            <br>
+            <button class="btn" onclick="goToPage('page5')">💖 เค้ามีอะไรจะให้...</button>
+        </div>
+
+        <div id="page5" class="page">
+            <h2>เลือกดูได้เลยยย</h2>
+            <div class="menu-grid">
+                <div class="menu-item" onclick="goToPage('page-timer')">
+                    <i class="fas fa-clock icon-heart"></i>
+                    <div>
+                        <strong>คบกันมากี่วันแล้วนะ?</strong><br>
+                        <small>เวลาเดินเร็วเนอะ</small>
+                    </div>
+                </div>
+
+                <div class="menu-item" onclick="alert('รักที่สุดในโลกเลย!')">
+                    <i class="fas fa-heart icon-heart"></i>
+                    <div><strong>ความในใจ</strong><br><small>กดอ่านเลย</small></div>
+                </div>
+                
+                <div class="menu-item" onclick="alert('จุ๊บๆ')">
+                    <i class="fas fa-kiss-wink-heart icon-heart"></i>
+                    <div><strong>ส่งจุ๊บ</strong><br><small>รับด้วยนะ</small></div>
+                </div>
+
+                </div>
+        </div>
+
+        <div id="page-timer" class="page">
+            <h2>เราคบกันมา...</h2>
+            <div id="timer-display">กำลังคำนวณ...</div>
+            <p>ทุกวินาทีมีความหมายนะ ❤️</p>
+            <button class="btn back-btn" onclick="goToPage('page5')">⬅️ กลับเมนูหลัก</button>
+        </div>
+
+    </div>
+
+<button class="home-btn" onclick="goToPage('page1')">
+        <i class="fas fa-home"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
