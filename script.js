@@ -1,6 +1,6 @@
 
 // --- การตั้งค่า (Configuration) ---
-const CORRECT_PASSWORD = "09052025"; // รหัสผ่าน
+const CORRECT_PASSWORD = "08062025"; // รหัสผ่าน
 const START_DATE = "2025-05-29";   // วันเริ่มคบ (ปี-เดือน-วัน)
 
 // --- ฟังก์ชันจัดการหน้าเว็บ ---
